@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ScrollCtx from './scrollctx/ctx';
 import App from './App';
 import { ThemeProvider } from './Context';
 
 ReactDOM.render(
   <ThemeProvider>
+    <ScrollCtx>
     <App />
+    </ScrollCtx>
   </ThemeProvider>,
   document.getElementById('root')
 );

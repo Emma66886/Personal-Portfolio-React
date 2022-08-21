@@ -7,9 +7,15 @@ import Humble from "../../img/humble.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import Resume from './resume.pdf';
+import { scrollContext } from "../../scrollctx/ctx";
+import { useEffect } from "react";
+import { useRef } from "react";
 
 const Services = () => {
+  // ref
+  const servicesRef = useRef();
   // context
+  const {setServicesPos} = useContext(scrollContext)
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
@@ -18,19 +24,21 @@ const Services = () => {
     duration: 1,
     type: "spring",
   };
-
+useEffect(()=>{
+  setServicesPos(servicesRef.current.offsetTop);
+},[])
   return (
-    <div className="services" id="services">
+    <div ref={servicesRef} className="services" id="services">
       {/* left side */}
       <div className="awesome">
         {/* dark mode */}
         <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
         <span>services</span>
-        <spane>
-          Lorem ispum is simpley dummy text of printing of printing Lorem
+        <span>
+          I am a fullstack developer experienced with JavaScript, and it various frontend frameworks.
           <br />
-          ispum is simpley dummy text of printing
-        </spane>
+          I am also well experienced with blockchain development and <br /> I have built various web apps on eutherium and solana blockchain.
+        </span>
         <a href={Resume} download>
           <button className="button s-button">Download CV</button>
         </a>
@@ -46,8 +54,8 @@ const Services = () => {
         >
           <Card
             emoji={HeartEmoji}
-            heading={"Design"}
-            detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
+            heading={"FRONTEND"}
+            detail={"HTML, CSS, REACTJS, TAILWIND CSS, CHAKRA-UI, BOOTSTRAP"}
           />
         </motion.div>
         {/* second card */}
@@ -58,8 +66,8 @@ const Services = () => {
         >
           <Card
             emoji={Glasses}
-            heading={"Developer"}
-            detail={"Html, Css, JavaScript, React, Nodejs, Express"}
+            heading={"BACKEND"}
+            detail={"NODEJS, NEXTJS, EXPRESSJS, MONGODB, MICROSERVICES"}
           />
         </motion.div>
         {/* 3rd */}
@@ -70,9 +78,9 @@ const Services = () => {
         >
           <Card
             emoji={Humble}
-            heading={"UI/UX"}
+            heading={"BLOCKCHAIN"}
             detail={
-              "Lorem ispum dummy text are usually use in section where we need some random text"
+              "JAVASCRIPT, RUST, SOLIDITY"
             }
             color="rgba(252, 166, 31, 0.45)"
           />

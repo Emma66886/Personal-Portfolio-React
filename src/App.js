@@ -1,3 +1,4 @@
+import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Intro from "./components/Intro/Intro";
 import Services from "./components/Services/Services";
@@ -10,10 +11,13 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import { useContext } from "react";
 import { themeContext } from "./Context";
+import Sidebar from "./components/sidebar";
+// import { ChakraProvider } from '@chakra-ui/react'
 function App() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
+    // <ChakraProvider >
     <div
       className="App"
       style={{
@@ -30,7 +34,9 @@ function App() {
       <Testimonial />
       <Contact />
       <Footer />
+      <Sidebar />
     </div>
+    // </ChakraProvider>
   );
 }
 

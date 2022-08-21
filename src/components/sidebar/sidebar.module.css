@@ -1,0 +1,32 @@
+.sidebarWrapper{
+    min-height: 15rem;
+    width: 3rem;
+    position: fixed;
+    background-color: rgba(255, 166, 0,0.5);
+    backdrop-filter: blur(2px);
+    top: 25%;
+    right: 10px;
+    z-index: 10;
+    border-radius: 20px;
+    display: flex; 
+    flex-direction: column;
+    gap:5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebarWrapper .item{
+    width: 2rem;
+    /* background-color: aliceblue; */
+    height: 2rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+.sidebarWrapper .item:hover {
+    background-color: rgba(255, 166, 0,0.6);
+    cursor: pointer;
+}
+.addOgrangecolor{
+    background-color: rgb(255, 166, 0);
+}

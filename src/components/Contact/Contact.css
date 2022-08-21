@@ -22,7 +22,9 @@
     align-items: center;
     
 }
-
+.button:disabled{
+    background-color: --var(--gray);
+}
 .c-right .user{
     width: 20rem;
     height: 2rem;

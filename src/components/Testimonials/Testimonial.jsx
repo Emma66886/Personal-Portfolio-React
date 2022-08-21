@@ -9,31 +9,41 @@ import profilePic1 from "../../img/profile1.jpg";
 import profilePic2 from "../../img/profile2.jpg";
 import profilePic3 from "../../img/profile3.jpg";
 import profilePic4 from "../../img/profile4.jpg";
+import { useContext } from "react";
+import { scrollContext } from "../../scrollctx/ctx";
 
 const Testimonial = () => {
   const clients = [
     {
+      id: 1,
+      name: "Taiwo Oluwaseyi",
       img: profilePic1,
       review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
+        "He completed my project before the deadline I gave him, good job dude... Really professional in talking and doing, now that's what you call a full stack developer, lol... Keep up the great work.",
     },
     {
+      id: 2,
+      name: "Babalola Dolapo",
       img: profilePic2,
       review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
+        "Incredible work delivered quickly. He took the description I gave Him, and delivered exactly what I was looking for. 100% would recommend His work.",
     },
     {
+      id: 3,
+      name: "Akinroye Emmanuel",
       img: profilePic3,
       review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
+        "Akinola, completed a large application in about one month. I had many devs working on this project and no one was capable of completing it, but Akinola did. He is very trustfull and definitely the greatest dev I've ever met. Hire him, you'll be in good hands!",
     },
     {
+      id: 4,
+      name: "Olawoore Taiwo",
       img: profilePic4,
       review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
+        " Great work, highly impressed by the work you have put and I appreciate your efforts. Sure would love to work in future.",
     },
   ];
-
+// const {} = useContext(scrollContext)
   return (
     <div className="t-wrapper" id="testimonial">
       <div className="t-heading">

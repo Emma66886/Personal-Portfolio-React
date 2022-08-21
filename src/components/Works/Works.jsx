@@ -24,16 +24,15 @@ const Works = () => {
             Works for All these
           </span>
           <span>Brands & Clients</span>
-          <spane>
-            Lorem ispum is simpley dummy text of printing of printing Lorem
+          <span>
+            I worked as a freelancer at various companies.
             <br />
-            ispum is simpley dummy text of printingLorem ispum is simpley dummy
-            text
+            {/* I woked
             <br />
             y dummy text of printingLorem
             <br />
-            ispum is simpley dummy text of printing
-          </spane>
+            ispum is simpley dummy text of printing */}
+          </span>
           <Link to="contact" smooth={true} spy={true}>
             <button className="button s-button">Hire Me</button>
           </Link>

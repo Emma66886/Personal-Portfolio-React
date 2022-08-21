@@ -18,6 +18,45 @@
   font-size: 2.5rem;
   font-weight: bold;
 }
+.p-iframe-box{
+  height: max-content;
+  border-radius: 10px;
+  
+}
+.p-iframe-cover{
+  cursor: pointer;
+  position: fixed;
+  border-radius: 10px;
+  inset: 2px 0 0 0;
+  height: 110%;
+  width: 100%;
+  z-index: 1;
+  background-color: #00000050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+  
+}
+.p-iframe-cover:hover div{
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.p-iframe-cover div{
+  display: none;
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+  /* transition-delay: 1s; */
+  height: 40%;
+  width: 50%;
+  border-radius: 10px;
+  background-color: aliceblue;
+}
 
 /* slider */
 .portfolio .swiper{

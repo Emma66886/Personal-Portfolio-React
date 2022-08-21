@@ -48,6 +48,7 @@
     border-radius: 100%;
 }
 .testimonial>span{
+    /* color: var(--orange); */
     color: var(--gray);
 }
 
