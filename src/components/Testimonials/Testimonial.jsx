@@ -33,7 +33,7 @@ const Testimonial = () => {
       name: "Akinroye Emmanuel",
       img: profilePic3,
       review:
-        "Akinola, completed a large application in about one month. I had many devs working on this project and no one was capable of completing it, but Akinola did. He is very trustfull and definitely the greatest dev I've ever met. Hire him, you'll be in good hands!",
+        "Emmanuel, completed a large application in about one month. I had many devs working on this project and no one was capable of completing it, but Akinola did. He is very trustfull and definitely the greatest dev I've ever met. Hire him, you'll be in good hands!",
     },
     {
       id: 4,
