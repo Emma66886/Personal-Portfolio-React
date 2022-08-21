@@ -23,7 +23,7 @@ const Footer = () => {
           <a href="https://twitter.com/crypto_decrypt" target='_blank'>
           <Twitter color="white" size={"3rem"} />
           </a>
-          <a href="https://wa.me/+2348104742511" target='_blank'>
+          <a href="https://wa.me/+2349019167349" target='_blank'>
           <Whatsapp color="white" size={"3rem"} />
           </a>
           <a href="https://www.linkedin.com/in/emmanuel-akinroye-637747171/" target='_blank'>

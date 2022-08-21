@@ -59,7 +59,7 @@ useEffect(()=>{
           <a href="https://twitter.com/crypto_decrypt" target='_blank'>
           <img src={twitter} alt="" />
           </a>
-          <a href="https://wa.me/+2348104742511" target='_blank'>
+          <a href="https://wa.me/+2349019167349" target='_blank'>
           <img src={whatsapp} alt="" />
           </a>
         </div>
