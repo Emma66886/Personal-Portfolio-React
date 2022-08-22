@@ -11,7 +11,7 @@ export const scrollContext = createContext({
 
 export default function ScrollCtx({children}){
     const [scrrolValue,setScrollValue] = useState(0);
-    const [currentSection,saveCurrentSection] = useState('');
+    const [currentSection,saveCurrentSection] = useState('nav');
     const [navPos,saveNavePos] = useState(0);
     const [servicePos,saveServicePos] = useState(0);
     const [experiencePos,saveExpPos] = useState(0);
@@ -19,7 +19,7 @@ export default function ScrollCtx({children}){
     const [contactPos,saveCOntactPos] = useState(0);
     const [introPos,saveIntroPos] = useState(0);
     const handleCurrentSection =()=>{
-        if(scrrolValue === 0)saveCurrentSection('nav');
+        // if(scrrolValue === 0)saveCurrentSection('nav');
         if(scrrolValue >= 0 && scrrolValue < introPos)saveCurrentSection('nav');
         if(scrrolValue >= introPos && scrrolValue < servicePos)saveCurrentSection('Intro');
         if(scrrolValue >= servicePos && scrrolValue < experiencePos)saveCurrentSection('service');
