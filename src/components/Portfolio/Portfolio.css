@@ -1,11 +1,10 @@
-.portfolio {
+/* .portfolio {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   height: 70vh;
-
-}
+} */
 /* heading */
 .portfolio span:nth-of-type(1) {
   color: var(--black);
@@ -18,49 +17,68 @@
   font-size: 2.5rem;
   font-weight: bold;
 }
-.p-iframe-box{
+.p-iframe-box {
   height: max-content;
   border-radius: 10px;
-  
-}
-.p-iframe-cover{
-  cursor: pointer;
-  position: fixed;
-  border-radius: 10px;
-  inset: 2px 0 0 0;
-  height: 110%;
-  width: 100%;
-  z-index: 1;
-  background-color: #00000050;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition-property: all;
-  transition-duration: 2s;
-  transition-timing-function: ease-in-out;
-  
-}
-.p-iframe-cover:hover div{
-  display: block;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.p-iframe-cover div{
-  display: none;
-  transition-property: all;
-  transition-duration: 2s;
-  transition-timing-function: ease-in-out;
-  /* transition-delay: 1s; */
-  height: 40%;
-  width: 50%;
-  border-radius: 10px;
-  background-color: aliceblue;
 }
 
-/* slider */
-.portfolio .swiper{
-    overflow: visible!important;
+.portfolio-itemwrapper {
+  padding: 5px 5px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 10px;
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+  border: 7px solid;
+  border-color: var(--orangeCard);
+  /* background-color: var(--orange); */
+  box-shadow: 0px 0px 10px 2px #c5c5c5;
+  transition: all 0.5s linear;
+}
+.portfolio-itemwrapper:hover {
+  background-color: #fff;
+  color: var(--black);
+  transform: scale(1.03);
+}
+.portfolio-slider .swiper-pagination-bullet-active {
+  background: var(--orange);
+}
+.portfolio-slider {
+  padding-bottom: 30px !important;
+}
+.portfolio-itemwrapper img {
+  width: 300px;
+  border-radius: 10px;
+}
+.portfolio-itemwrapper h3 {
+  font-weight: 800;
+  text-align: center;
+}
+.portfolio-itemwrapper a {
+  align-self: center;
+  width: 40%;
+}
+.portfolio-itemwrapper button {
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px 5px;
+  cursor: pointer;
+  border: 0px;
+  transition: all 0.5s linear;
+}
+.portfolio-itemwrapper button:hover {
+  background-color: var(--orange);
+  color: antiquewhite;
+  transform: scale(1.1);
+}
+/* .portfolio-itemwrapper a {
+  padding: 0px;
+} */
+/* .portfolio .swiper {
+  overflow: visible !important;
 }
 
 .portfolio-slider {
@@ -75,5 +93,4 @@
   width: 19rem;
   filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
   border-radius: 19px;
-}
-
+} */ ;

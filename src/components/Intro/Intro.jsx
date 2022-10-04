@@ -38,11 +38,10 @@ useEffect(()=>{
       <div className="i-left">
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
-          <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
+          <span style={{ color: darkMode ? "white" : "" }}>Hey! I Am</span>
           <span>Emmanuel Akinroye</span>
           <span>
-            Fullstack Developer with high level of experience in web designing
-            and development, producting the Quality work
+            Fullstack Developer website developer with over three years of experience and producing Quality work
           </span>
         </div>
         <Link to="contact" smooth={true} spy={true}>
